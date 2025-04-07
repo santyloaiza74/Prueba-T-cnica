@@ -1,66 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book</title>
+    <title>Libro Interactivo</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome para íconos (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="./function.js" defer></script>
 </head>
 <body>
-    <!-- Previous Button -->
-    <button id="prev-btn">
-        <i class="fas fa-arrow-circle-left"><</i>
+    <!-- Botón Anterior (izquierda) -->
+    <button id="prev-btn" class="side-btn">
+        <i class="fas fa-arrow-circle-left"></i>
     </button>
 
-
-    <!-- Book -->
+    <!-- Libro Centrado -->
     <div id="book" class="book">
-        <!-- Paper 1 -->
+        <!-- Portada (Página 1) -->
         <div id="p1" class="paper">
-            <div class="front">
-                <div id="f1" class="front-content">
-                    <h1>Front 1</h1>
+            <div class="front cover">
+                <div class="cover-content">
+                    <h1>El Macho</h1>
+                    <p>Esteban y Santiago</p>
+                    <div class="spine"></div>
                 </div>
             </div>
             <div class="back">
                 <div id="b1" class="back-content">
-                    <h1>Back 1</h1>
+                    <h2>Página 1</h2>
+                    <p>Probando la insercion de imagenes</p>      
                 </div>
             </div>
         </div>
-        <!-- Paper 2 -->
+
+        <!-- Página 2 -->
         <div id="p2" class="paper">
             <div class="front">
                 <div id="f2" class="front-content">
-                    <h1>Front 2</h1>
+                    <h2>Página 2</h2>
+                    <p>Contenido frontal...</p>
                 </div>
             </div>
             <div class="back">
                 <div id="b2" class="back-content">
-                    <h1>Back 2</h1>
+                    <h2>Página 3</h2>
+                    <p>Contenido trasero...</p>
                 </div>
             </div>
         </div>
-        <!-- Paper 3 -->
+
+        <!-- Página 3 (Contraportada) -->
         <div id="p3" class="paper">
             <div class="front">
                 <div id="f3" class="front-content">
-                    <h1>Front 3</h1>
+                    <h2>Página 4</h2>
+                    <p>Último contenido...</p>
                 </div>
             </div>
-            <div class="back">
+            <div class="back cover-back">
                 <div id="b3" class="back-content">
-                    <h1>Back 3</h1>
+                    <h1>Fin</h1>
+                    <p>¡Gracias por leer!</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Next Button -->
-    <button id="next-btn">
-        <i class="fas fa-arrow-circle-right">></i>
+    <!-- Botón Siguiente (derecha) -->
+    <button id="next-btn" class="side-btn">
+        <i class="fas fa-arrow-circle-right"></i>
     </button>
 </body>
 </html>
