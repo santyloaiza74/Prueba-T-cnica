@@ -12,7 +12,7 @@ prevBtn.addEventListener("click", anteriorpag); // Escucha clics en el botón "a
 nextBtn.addEventListener("click", siguientepag); // Escucha clics en el botón "siguiente"
 document.addEventListener("keydown", teclas); // Escucha teclas presionadas (izquierda/derecha)
 
-// Lógica de negocio
+// Variables para el estado del libro
 let currentLocation = 1; // Página actual del libro
 let numOfPapers = 3; // Número total de páginas
 let maxLocation = numOfPapers + 1; // Máxima ubicación (fuera del rango de páginas)
